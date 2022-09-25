@@ -5,7 +5,9 @@ package school.mjc.stage0.loops.task2;
 public class PrimeNumbers {
 
 
-    void printPrimeNumbers(int printToInclusive) {
+     void printPrimeNumbers(int printToInclusive) {
+
+         if(printToInclusive<1)return;
 
         int temp=2;
 
@@ -17,7 +19,7 @@ public class PrimeNumbers {
         }
     }
 
-    private static boolean isPrime(int n){
+     static boolean isPrime(int n){
         for(int i=2;i<=n/2;i++){
             if(n%i==0)
                 return false;
